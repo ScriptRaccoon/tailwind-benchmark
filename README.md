@@ -1,4 +1,4 @@
-# Tailwind Benchmark
+# Tailwind Benchmark No. 1
 
 ## What this is about
 
@@ -55,3 +55,7 @@ Tailwind's results:
 -   build time: ~ 4.5s
 
 The total bundle is still **42%** larger.
+
+## Next benchmark
+
+https://github.com/ScriptRaccoon/tailwind-benchmark-2
