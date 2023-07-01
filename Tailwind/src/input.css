@@ -1,3 +1,22 @@
-@tailwind base;
+/* custom reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+}
+
+button {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
 @tailwind components;
 @tailwind utilities;
