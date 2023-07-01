@@ -26,14 +26,14 @@ In both cases, the CSS was minified. Here are the results:
 
 ### Tailwind
 
--   `index.html`: 8.665 bytes
--   `style.css`: 6.077 bytes
--   total: 14.742 bytes
+-   `index.html`: 8.676 bytes
+-   `style.css`: 6.105 bytes
+-   total: 14.781 bytes
 -   build time: ~ 4s
 
 ## Conclusion
 
-At least for basic landing pages, Tailwind's marketing claim seems to be incorrect. The total bundle size is **74%** larger compared to Vanilla CSS.
+At least for basic landing pages, Tailwind's marketing claim seems to be incorrect. The total bundle size is **75%** larger compared to Vanilla CSS.
 
 That the HTML is bigger is not a surprise since it contains utility classes.
 
