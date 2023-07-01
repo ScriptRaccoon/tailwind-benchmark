@@ -1,0 +1,213 @@
+// global stuff
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: hsl(249, 42%, 36%);
+	--cta-color: rgb(229, 90, 40);
+	--font-color: #222;
+	--inverted-font-color: #fff;
+	--gray-color: #555;
+	--light-color: hsl(249, 42%, 92%);
+	--bg-color: #fff;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--font-color);
+	line-height: 1.5;
+}
+
+// element resets
+
+a {
+	color: inherit;
+}
+
+button {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+// sections
+
+section {
+	max-width: 42rem;
+	margin-inline: auto;
+	padding: 3rem 1rem;
+
+	h2 {
+		text-align: center;
+		font-size: 2.25rem;
+		font-weight: 400;
+		margin-bottom: 2rem;
+		line-height: 1.2;
+	}
+}
+
+.section-wrapper {
+	background-color: var(--light-color);
+}
+
+// header and footer
+
+header,
+footer {
+	padding: 1rem;
+	background-color: var(--primary-color);
+	color: var(--inverted-font-color);
+
+	ul {
+		list-style-type: none;
+		display: flex;
+		gap: 1.25rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
+
+header a {
+	text-decoration: none;
+	font-size: 1.25rem;
+}
+
+footer a {
+	white-space: nowrap;
+}
+
+// hero
+
+.hero {
+	padding-inline: 2rem;
+}
+
+h1 {
+	font-size: 2.75rem;
+	font-weight: 300;
+}
+
+.teaser {
+	color: var(--gray-color);
+	padding-block: 1rem;
+}
+
+.cta-button {
+	background-color: var(--cta-color);
+	color: var(--inverted-font-color);
+	padding: 0.6rem 1.2rem;
+	font-size: 1.5rem;
+	border-radius: 0.25rem;
+}
+
+.testimonial {
+	text-align: center;
+	padding-block: 2.5rem;
+}
+
+// cards
+
+.card {
+	background-color: var(--bg-color);
+	padding: 1rem;
+	border-radius: 0.4rem;
+	box-shadow: 0.2rem 0.2rem 0.5rem #0002;
+
+	h3 {
+		padding-block: 0.5rem;
+		font-size: 1.5rem;
+	}
+}
+
+// features
+
+.feature-cards {
+	display: grid;
+	row-gap: 2rem;
+}
+
+// FAQ
+
+.faq {
+	details {
+		font-size: 1.25rem;
+		margin-block: 0.5rem;
+
+		summary {
+			cursor: pointer;
+		}
+
+		p {
+			padding: 1rem;
+		}
+
+		&[open] summary {
+			font-weight: bold;
+		}
+	}
+}
+
+// Pricing
+
+.plan-cards {
+	display: grid;
+	gap: 2rem;
+	max-width: 20rem;
+	margin-inline: auto;
+
+	.card {
+		h3 {
+			text-align: center;
+		}
+		ul {
+			margin-left: 1rem;
+		}
+		li {
+			margin-bottom: 0.25rem;
+		}
+	}
+}
+
+// Large screens
+
+@media (min-width: 50rem) {
+	h1 {
+		font-size: 3.25rem;
+	}
+
+	.teaser,
+	.testimonial {
+		font-size: 1.25rem;
+	}
+
+	.feature-cards {
+		grid-template-columns: 3rem 1fr 3rem;
+		.card:nth-child(odd) {
+			grid-column: 1 / span 2;
+		}
+		.card:nth-child(even) {
+			grid-column: 2 / span 2;
+		}
+	}
+
+	section h2 {
+		font-size: 2.5rem;
+	}
+
+	.plan-cards {
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 100%;
+	}
+}
