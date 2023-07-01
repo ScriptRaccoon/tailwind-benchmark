@@ -37,6 +37,10 @@ At least for basic landing pages, Tailwind's marketing claim seems to be incorre
 
 That the HTML is bigger is not a surprise since it contains utility classes.
 
-Also, the same utility classes are repeated for reoccurring elements such as sections and cards. (This repetition is prevented when using CSS classes.) If we used a component framework (which seems to be overkill for such a basic page, but just for the sake of argument) and transformed the sections, cards etc. to components, the code repetition will not be in the code itself, but it will be in the rendered HTML which is served to the user. So as for the benchmark, this does not make any difference.
+Also, the same utility classes are repeated for reoccurring elements such as sections and cards. (This repetition is prevented when using CSS classes.) For example, the Tailwind HTML contains the class string
+
+`bg-white p-4 rounded-md shadow-lg`
+
+six times, since there are six cards on the page. If we used a component framework (which seems to be overkill for such a basic page, but just for the sake of argument) and transformed the sections, cards etc. to components, the code repetition will not be in the code itself, but it will be in the rendered HTML which is served to the user. So as for the benchmark, this does not make any difference.
 
 The CSS output is bigger also because of Tailwind's CSS reset. I assume that for bigger projects the difference will be smaller (in relative terms), but this needs to be tested.
