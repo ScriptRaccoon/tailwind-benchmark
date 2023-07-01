@@ -47,18 +47,9 @@ six times, since there are six cards on the page. If we used a component framewo
 
 One reason for the bigger CSS output of Tailwind is its built-in reset, which is quite big. How do the results change when we replace this with the same small reset used for the Vanilla CSS version? This is done in the branch `without-preflight`.
 
-The results are as follows:
+Tailwind' results:
 
-### Vanilla CSS (Winner, as above)
-
--   `index.html`: 6.286 bytes
--   `style.css`: 2.164 bytes
--   total: 8.450 bytes
--   build time (Sass): ~ 1.7s
-
-### Tailwind
-
--   `index.html`: 8.676 bytes
+-   `index.html`: 8.870 bytes
 -   `style.css`: 3.191 bytes
 -   total: 12.061 bytes
 -   build time: ~ 4.5s
