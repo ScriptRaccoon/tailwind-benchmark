@@ -43,4 +43,24 @@ Also, the same utility classes are repeated for reoccurring elements such as sec
 
 six times, since there are six cards on the page. If we used a component framework (which seems to be overkill for such a basic page, but just for the sake of argument) and transformed the sections, cards etc. to components, the code repetition will not be in the code itself, but it will be in the rendered HTML which is served to the user. So as for the benchmark, this does not make any difference.
 
-The CSS output is bigger also because of Tailwind's CSS reset. I assume that for bigger projects the difference will be smaller (in relative terms), but this needs to be tested.
+## Results without preflight
+
+One reason for the bigger CSS output of Tailwind is its built-in reset, which is quite big. How do the results change when we replace this with the same small reset used for the Vanilla CSS version? This is done in the branch `without-preflight`.
+
+The results are as follows:
+
+### Vanilla CSS (Winner, as above)
+
+-   `index.html`: 6.286 bytes
+-   `style.css`: 2.164 bytes
+-   total: 8.450 bytes
+-   build time (Sass): ~ 1.7s
+
+### Tailwind
+
+-   `index.html`: 8.676 bytes
+-   `style.css`: 3.191 bytes
+-   total: 12.061 bytes
+-   build time: ~ 4.5s
+
+The total bundle is still **42%** larger.
