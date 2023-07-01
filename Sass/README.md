@@ -3,4 +3,4 @@
 ## Commands
 
 1. `npm run dev` compiles the Sass during development
-2. `npm run build` builds the Sass for productions
+2. `npm run build` builds the Sass for production
