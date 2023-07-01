@@ -4,7 +4,7 @@
 
 This benchmark evaluates the marketing claim that Tailwind produces smaller builds. To test this, a basic landing page was built, once with Vanilla CSS (actually, Sass, just to use its nesting syntax) and once with Tailwind. You can find them in the subfolders `Sass` and `Tailwind`.
 
-The two pages do not look completely identical (it was not possible to achieve pixel-perfectness easily), but very similar. The pages present a fictional product, the text content was generated with ChatGPT.
+The two pages do not look completely identical (it was not possible to achieve pixel-perfectness easily), but very similar. The pages present a fictional product, the text content was generated with ChatGPT. The CSS version is deployed at https://tailwind-benchmark.netlify.app/.
 
 ## Results
 
