@@ -20,12 +20,14 @@ In both cases, the CSS was minified. Here are the results:
 -   `index.html`: 6.286 bytes
 -   `style.css`: 2.164 bytes
 -   total: 8.450 bytes
+-   build time (Sass): ~ 1.7s
 
 ### Tailwind
 
 -   `index.html`: 8.665 bytes
 -   `style.css`: 6.077 bytes
 -   total: 14.742 bytes
+-   build time: ~ 4s
 
 ## Conclusion
 
