@@ -33,7 +33,7 @@ In both cases, the CSS was minified. Here are the results:
 
 ## Conclusion
 
-At least for basic landing pages, Tailwind's marketing claim seems to be incorrect. The total bundle size is **75%** larger compared to Vanilla CSS.
+At least for basic landing pages\*, Tailwind's marketing claim seems to be incorrect. The total bundle size is **75%** larger compared to Vanilla CSS.
 
 That the HTML is bigger is not a surprise since it contains utility classes.
 
@@ -59,3 +59,5 @@ The total bundle is still **42%** larger.
 ## Next benchmark
 
 https://github.com/ScriptRaccoon/tailwind-benchmark-2
+
+\*See [this benchmark](https://github.com/TGlide/tailwind-benchmark) by Thomas G. Lopes with more data, where Tailwind's bundle size is indeed smaller.
